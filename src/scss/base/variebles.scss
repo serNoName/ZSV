@@ -1,0 +1,20 @@
+:root {
+    --bg-color: #0C0C0C;
+    --bg-footer-color: rgba(9, 9, 9, 1);
+    --primary-text-color: rgba(224,224,224,1);
+    --secondary-text-color: #888;
+}
+
+$bgColor: var(--bg-color);
+$bgFooterColor: var(--bg-footer-color);
+$primaryTextColor: var(--primary-text-color);
+$secondaryTextColor: var(--secondary-text-color);
+
+$-z: -1;
+$z-content1: 1;
+$z-content2: 2;
+$z-content3: 3;
+$z-content4: 4;
+$z-dropdown: 5;
+$z-popup: 10;
+$z-importent: 15;

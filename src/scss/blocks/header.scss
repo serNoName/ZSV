@@ -1,0 +1,16 @@
+.header {
+    border-bottom: 1px solid #373737;
+    background: url(../img/bg/bg-header.png), lightgray 0% 0% / 100px 100px repeat;
+    // background: url(../img/bg/bg-header.png) left repeat-x;
+    padding: 16px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 48px 24px;
+    }
+    &__inner, &__nav {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}

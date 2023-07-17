@@ -1,0 +1,41 @@
+::selection {
+    background-color: #888;
+    color: #fff;
+}
+body {
+    width: 100%;
+}
+.block-scroll {
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main {
+    flex: 1;
+}
+.section {
+    padding: 60px 0;
+    &:first-child {
+        padding-top: 80px;
+    }
+    &:last-child {
+        padding-bottom: 120px;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.logo {
+    opacity: .8;
+    transition: opacity .2s ease-in-out;
+    display: inline-block;
+    &:hover {
+        opacity: 1;
+    }
+}

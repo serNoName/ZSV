@@ -1,0 +1,25 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../../../files/fonts/#{$file_name}.woff") format("woff"), url("../../../files/fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+@mixin custom-scrollbar($width, $track-color, $thumb-color) {
+    scrollbar-color: $thumb-color $track-color;
+    &::-webkit-scrollbar {
+      width: $width;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $track-color;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $thumb-color;
+    }
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: thin;
+    }
+  }

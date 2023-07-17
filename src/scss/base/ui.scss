@@ -1,0 +1,157 @@
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    &_person {
+        mask-image: url(../img/ico/person.svg);
+        -webkit-mask-image: url(../img/ico/person.svg);
+    }
+    &_basket {
+        mask-image: url(../img/ico/basket.svg);
+        -webkit-mask-image: url(../img/ico/basket.svg);
+    }
+    &_calendar {
+        mask-image: url(../img/ico/calendar.svg);
+        -webkit-mask-image: url(../img/ico/calendar.svg);
+    }
+    &_email {
+        mask-image: url(../img/ico/email.svg);
+        -webkit-mask-image: url(../img/ico/email.svg);
+    }
+    &_phone {
+        mask-image: url(../img/ico/phone.svg);
+        -webkit-mask-image: url(../img/ico/phone.svg);
+    }
+    &_pin {
+        mask-image: url(../img/ico/pin.svg);
+        -webkit-mask-image: url(../img/ico/pin.svg);
+    }
+    &_loupe {
+        mask-image: url(../img/ico/loupe.svg);
+        -webkit-mask-image: url(../img/ico/loupe.svg);
+    }
+    &_close {
+        mask-image: url(../img/ico/close.svg);
+        -webkit-mask-image: url(../img/ico/close.svg);
+    }
+    &_rub {
+        mask-image: url(../img/ico/rub.svg);
+        -webkit-mask-image: url(../img/ico/rub.svg);
+    }
+    &_facebook {
+        mask-image: url(../img/ico/social/facebook.svg);
+        -webkit-mask-image: url(../img/ico/social/facebook.svg);
+    }
+    &_linkedin {
+        mask-image: url(../img/ico/social/linkedin.svg);
+        -webkit-mask-image: url(../img/ico/social/linkedin.svg);
+    }
+    &_pinterest {
+        mask-image: url(../img/ico/social/pinterest.svg);
+        -webkit-mask-image: url(../img/ico/social/pinterest.svg);
+    }
+    &_twitter {
+        mask-image: url(../img/ico/social/twitter.svg);
+        -webkit-mask-image: url(../img/ico/social/twitter.svg);
+    }
+    &_user {
+        mask-image: url(../img/ico/social/user.svg);
+        -webkit-mask-image: url(../img/ico/social/user.svg);
+    }
+    &_burger {
+        mask-position: center;
+        -webkit-mask-position: center;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(../img/ico/burger.svg);
+        -webkit-mask-image: url(../img/ico/burger.svg);
+        background-color: $secondaryTextColor;
+    }
+    &_header {
+        background-color: $secondaryTextColor;
+        transition: .1s background-color ease-in-out;
+        &:hover {
+            background-color: $primaryTextColor;
+        }
+    }
+    &_small {
+        width: 16px;
+        height: 16px;
+    }
+}
+.btn {
+    display: flex;
+    align-items: center;
+    color: $secondaryTextColor;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 4px 16px;
+    border-radius: 0px 12px;
+    border: 1px solid #888;
+    opacity: 0.8;
+    background: #222;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25), 0px 0px 14px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(2px);
+    transition: color .1s ease-in-out, opacity .1s ease-in-out, box-shadow .1s ease-in-out;
+    &_icons {
+        gap: 20px;
+        align-items: center;
+        height: 42px;
+    }
+    &_header {
+        height: 42px;
+        max-height: 42px;
+        &-desk {
+
+        }
+        &-mobi {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 12px);
+            display: none;
+            width: fit-content;
+            height: auto;
+            max-height: none;
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25), 0px 0px 14px 0px rgba(0, 0, 0, 0.80) inset;
+        opacity: 1;
+        &:active {
+            opacity: .8;
+        }
+    }
+    &:active {
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25), 0px 0px 14px 0px rgba(0, 0, 0, 0.80) inset;
+    }
+    &_static {
+        &:hover {
+            opacity: .8;
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25), 0px 0px 14px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+    }
+    &_burger {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 56px;
+        cursor: pointer;
+        padding: 9px 16px;
+        &:hover {
+            .icon {
+                background-color: $primaryTextColor;
+            }
+        }
+    }
+}
