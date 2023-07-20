@@ -87,6 +87,7 @@
         }
         &:hover {
             color: $primaryTextColor;
+            text-decoration: none;
             &:before {
                 transform-origin: left;
                 transform: scaleX(1);
@@ -95,13 +96,7 @@
             }
         }
     }
-    // &:before {
-    //     position: fixed;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     content: '';
-    //     background: radial-gradient(rgba(255,255,255, 0.05), rgba(255,255,255, 0));
-    // }
+    .aside__title {
+        padding-right: 36px;
+    }
 }

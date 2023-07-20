@@ -2,6 +2,7 @@
 @import '../../node_modules/swiper/swiper-bundle.min';
 
 @import 'base/variebles.scss';
+@import 'base/mixins.scss';
 
 * {
     margin: 0;
@@ -26,9 +27,23 @@ img, svg {
 body {
     background-color: $bgColor;
     color: $primaryTextColor;
+    @include custom-scrollbar(10px, #252525, #6b6b6b);
+}
+a {
+    color: #235fec;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline
+    }
 }
 
-@import 'base/mixins.scss';
+[data-tab] {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
 @import 'base/text.scss';
 @import 'base/ui.scss';
 @import 'base/fonts.scss';
@@ -39,6 +54,9 @@ body {
 @import 'blocks/news.scss';
 @import 'blocks/contacts.scss';
 @import 'blocks/footer.scss';
+@import 'blocks/aside.scss';
+@import 'blocks/cabinet.scss';
 @import 'blocks/pop-up.scss';
+@import 'blocks/404.scss';
 
 @import './media.scss';

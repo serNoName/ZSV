@@ -1,0 +1,103 @@
+.slider {
+    margin-bottom: 48px;
+    &__card {
+        position: relative;
+    }
+
+    &__image {
+        border-radius: 64px 0;
+        // width: 100%;
+    }
+
+    &__title {
+        color: #909090;
+        font-size: 28px;
+        line-height: 140%; /* 39.2px */
+        padding-right: 12px;
+    }
+
+    &__subtitle {
+        color: #E0E0E0;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 140%; /* 50.4px */
+        padding-right: 12px;
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 32px;
+        bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+.splide {
+    &__track {
+        border-radius: 64px 0;
+        overflow: hidden;
+    }
+
+    &__pagination {
+        position: absolute;
+        top: calc(100% + 32px);
+        display: flex;
+        gap: 12px;
+        padding: 0 16px;
+        width: calc(100% - 231px);
+        li {
+            display: flex;
+            flex: 1;
+        }
+
+        &__page {
+            margin: 0;
+            width: 100%;
+            border-radius: 2px;
+            background: rgba(207, 207, 207, 0.20);
+            backdrop-filter: blur(2px);
+            transition: background-color .1s ;
+            opacity: 1;
+            height: 4px;
+            &.is-active {
+                transform: none;
+                background-color: #CFCFCF;
+            }
+        }
+    }
+    &__arrow {
+        background: transparent;
+        opacity: 1;
+        width: 64px;
+        height: 32px;
+        border-radius: 0;
+        transform: translateY(-50%);
+        top: calc(100% + 32px);
+        background: rgba(207, 207, 207, 0.20);
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-image: url(../img/slider/slider-arrow.svg);
+        mask-image: url(../img/slider/slider-arrow.svg);
+        transition: background-color .1s ;
+        svg {
+            display: none;
+        }
+        &--prev {
+            right: 92px;
+            left: auto;
+            transform: translateY(-50%) rotate(180deg);
+        }
+        &--next {
+            right: 16px;
+        }
+        &:hover {
+            background-color: #CFCFCF;
+        }
+    }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Каталог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div class="catalog catalog_news">
+                        <aside class="catalog__col aside aside_filter">
+                            <form action="#" method="post" class="aside__content aside__content_catalog">
+                                <div class="aside__wrapper">
+                                    <div class="aside__title">Фильтр по параметрам:</div>
+                                    <div class="line line_dashed"></div>
+                                </div>
+                                <div class="aside__wrapper">
+                                    <div class="aside__subtitle">Длина изделия, мм</div>
+                                    <div class="aside__inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">330</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">350</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">400</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">427</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">458</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">520</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">528</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">598</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">650</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">760</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="aside__wrapper">
+                                    <div class="aside__subtitle">Параметры сечения изделия, мм</div>
+                                    <div class="aside__inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Круг Ø186</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Овал 187*117</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Овал 272*170</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="aside__wrapper">
+                                    <div class="aside__subtitle">Вход/выход под трубу диаметром, мм</div>
+                                    <div class="aside__inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">45</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">50</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">55</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">60</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="aside__wrapper">
+                                    <div class="aside__subtitle">Тип внутреннего узла</div>
+                                    <div class="aside__inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Лабиринтно-камерный, без наполнителя</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Лабиринтно-камерный, с наполнителем</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Прямоточный, с наполнителем</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="aside__wrapper">
+                                    <div class="aside__subtitle">Положение отверстий</div>
+                                    <div class="aside__inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">По центру</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Смещенные</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Смещенное/по центру</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__box"></span>
+                                            <span class="checkbox__text">Вход по центру/выход смещенный</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn_filter">
+                                    <span class="icon icon_loupe"></span>Поиск</button>
+                            </form>
+                        </aside>
+                        <div class="catalog__main catalog__main_items">
+                            <div class="section__header">
+                                <h1 class="section__title">Глушители универсальные</h1>
+                                <div class="line"></div>
+                            </div>
+                            <button type="button" data-target="filter" class="popup-triger btn btn_catalog"><div class="icon icon_filter"></div>Фильтр</button>
+                            <div class="catalog_cards">
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                                <div class="item">
+                                    <a href="item.html" class="item__link"></a>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="@img/item.jpg" alt="item image" width="246" class="item__img lazyload">
+                                    <div class="item__wrapper">
+                                        <h2 class="item__title">Глушитель основной прямоточный CBD433.001</h2>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Длина изделия, мм: <span>427</span></div>
+                                            <div class="item__text">Длина камеры, мм: <span>350</span></div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__inner">
+                                            <div class="item__text">Оптовая цена: <span>4820</span></div>
+                                            <div class="item__text">Розничная цена: <span>5100</span></div>
+                                        </div>
+                                        <button type="button" class="btn btn_item"><span class="icon icon_basket"></span>В КОРЗИНУ</button>
+                                    </div class="item__wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html', {})
+        @@include('html/pop-ups.html', {})
+    </div>
+</body>
+
+</html>

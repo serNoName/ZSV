@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Контакты"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div class="section__header">
+                        <h1 class="section__title">КОНТАКТЫ</h1>
+                        <div class="line"></div>
+                    </div>
+                    <div class="contacts">
+                        <ul class="contacts__list">
+                            <li class="contacts__li"><a target="_blank" rel="nofollow" href="https://goo.gl/maps/Q9mx38ETt8k2LXNY7" class="contacts__link"><span class="icon icon icon_small icon_pin"></span>Можайское шоссе, 159 к 9</a></li>
+                            <li class="contacts__li"><a href="mailto:zsvmuflers@yandex.ru" class="contacts__link"><span class="icon icon icon_small icon_email"></span>ZSVMUFLERS@YANDEX. RU</a></li>
+                            <li class="contacts__li"><a href="tel:+89017814050" class="contacts__link"><span class="icon icon icon_small icon_phone"></span>+8 (901) 781-40-50</a></li>
+                        </ul>
+                        <div class="contacts__map">
+                            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.098233038899!2d37.442311576954474!3d55.72204499435958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54e96f9121a03%3A0xebfb0810a27c3332!2z0JzQvtC20LDQudGB0LrQvtC1INGILiwgMTU5INC6IDksINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjEzNzQ!5e0!3m2!1sru!2sua!4v1689772498002!5m2!1sru!2sua" width="1200" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html', {})
+        @@include('html/pop-ups.html', {})
+    </div>
+</body>
+
+</html>

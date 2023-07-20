@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Регистрация"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div class="reg">
+                        <div class="reg__content active" data-tab="reg">
+                            <div class="reg__body" >
+                                <div class="reg__title">регистрация</div>
+                                <form action="#" method="post" class="reg__form" id="reg">
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Имя*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Номер телефона*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Email*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Пароль*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                </form>
+                                <div class="reg__btns">
+                                    <button form="reg" type="submit" class="btn btn_reg">ОТправить</button>
+                                    <button type="button" class="btn btn_reg" data-target-tab="auth">Авторизация</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reg__content" data-tab="auth">
+                            <div class="reg__body active" >
+                                <div class="reg__title">Авторизация</div>
+                                <form action="#" method="post" class="reg__form" id="auth">
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Email*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Пароль*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                </form>
+                                <div class="reg__restore">
+                                    Забыли пароль? <button class="reg__restore-btn" href="#" data-target-tab="restore">Можно восстановить!</button>
+                                </div>
+                                <div class="reg__btns">
+                                    <button form="auth" type="submit" class="btn btn_reg">Отправить</button>
+                                    <button type="button" class="btn btn_reg" data-target-tab="reg">Регистрация</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reg__content" data-tab="restore">
+                            <div class="reg__body active">
+                                <div class="reg__title">востановить пароль</div>
+                                <form action="#" method="post" id="restore" class="reg__form">
+                                    <label class="input">
+                                        <input type="text" class="input__field">
+                                        <span class="input__label">Email*</span>
+                                        <span class="input__err"></span>
+                                    </label>
+                                </form>
+                                <div class="reg__btns">
+                                    <button form="restore" type="submit" class="btn btn_reg">ОТправить</button>
+                                    <button type="button" class="btn btn_reg" data-target-tab="auth">Авторизация</button>
+                                    <button type="button" class="btn btn_reg" data-target-tab="reg">Регистрация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html', {})
+        @@include('html/pop-ups.html', {})
+    </div>
+</body>
+
+</html>

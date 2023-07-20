@@ -39,6 +39,7 @@
         }
         &:hover {
             color: $primaryTextColor;
+            text-decoration: none;
             &:before {
                 transform-origin: left;
                 transform: scaleX(1);

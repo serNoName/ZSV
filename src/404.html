@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "404"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main main_not-found">
+            <section class="section">
+                <div class="container">
+                    <div class="not-found">
+                        <div class="not-found__title">404</div>
+                        <div class="line"></div>
+                        <h1 class="not-found__subtitle">Страница не найдена</h1>
+                        <h2 class="not-found__text">Этот товар или страница больше не доступены.</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html', {})
+        @@include('html/pop-ups.html', {})
+    </div>
+</body>
+
+</html>
