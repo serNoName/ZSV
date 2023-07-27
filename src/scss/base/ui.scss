@@ -940,9 +940,11 @@
             margin-left: auto;
             text-align: center;
             width:  120px;
+            min-width:  120px;
         }
         &:first-child {
             margin-left: 16px;
+            padding-right: 8px;
         }
     }
 }

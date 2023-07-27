@@ -384,6 +384,19 @@
     .order {
         padding: 20px;
     }
+    .table {
+        font-size: 14px;
+        &__col {
+            &:last-child {
+                margin-right: 8px;
+                width: 100px;
+                min-width: 100px;
+            }
+            &:first-child {
+                margin-left: 8px;
+            }
+        }
+    }
 }
 @media(max-width: 360px) {
     .header {
@@ -416,5 +429,12 @@
     }
     .reg {
         padding: 20px;
+    }
+    .table {
+        &__col {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
