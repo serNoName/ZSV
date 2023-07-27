@@ -914,3 +914,35 @@
         gap: 12px;
     }
 }
+
+.table {
+    background: #191919;
+    width: 100%;
+    th {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%; /* 16px */
+    }
+    &__row {
+        display: flex;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        }
+    }
+    &__col {
+        display: inline-block;
+        padding: 12px 0;
+        &:last-child {
+            background: rgba(255, 255, 255, 0.05);
+            margin-right: 16px;
+            margin-left: auto;
+            text-align: center;
+            width:  120px;
+        }
+        &:first-child {
+            margin-left: 16px;
+        }
+    }
+}
